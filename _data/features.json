@@ -1,17 +1,17 @@
 [
   {
     "title": "Run Locally",
-    "description": "Run the system locally, test locally.",
+    "description": "Run the system locally, test locally, perfect for running trials",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
     "title": "Command line compatible",
-    "description": "Works with the real AWS command line.",
+    "description": "Works with the real AWS command line and SDK tools, without any modifications to normal workflow",
     "image": "images/features/noun_The Process_1885341.svg"
   },
   {
     "title": "Customise Setup",
-    "description": "Run one or any number of services as required.",
+    "description": "Run one or any number of services as required. Common services like S3, DynamoDB, IAM",
     "image": "images/features/noun_3d modeling_1885342.svg"
   }
 ]
