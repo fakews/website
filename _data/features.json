@@ -1,7 +1,7 @@
 [
   {
     "title": "Run Locally",
-    "description": "Run the system locally, test locally, perfect for running trials",
+    "description": "Run the system locally, test locally, perfect for running trials and very easy to get started. Just run a 'docker-compose up'",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
