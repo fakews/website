@@ -3,6 +3,8 @@ exclude: ['README.md']
 permalink: pretty
 title: 'FakeWS'
 encoding: utf-8
+domain: fakews.com
+url: https://fakews.com
 
 collections:
   services:
