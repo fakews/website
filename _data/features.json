@@ -1,17 +1,17 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
+    "title": "Run Locally",
+    "description": "Run the system locally, test locally.",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Command line compatible",
+    "description": "Works with the real AWS command line.",
     "image": "images/features/noun_The Process_1885341.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Customise Setup",
+    "description": "Run one or any number of services as required.",
     "image": "images/features/noun_3d modeling_1885342.svg"
   }
 ]
