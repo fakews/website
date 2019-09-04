@@ -1,7 +1,8 @@
 baseurl: ''
 exclude: ['README.md']
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'FakeWS'
+encoding: utf-8
 
 collections:
   services:
