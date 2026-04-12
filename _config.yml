@@ -2,6 +2,7 @@ baseurl: ''
 exclude: ['README.md']
 permalink: pretty
 title: 'FakeWS'
+description: 'Fake AWS for Local Development - Run S3, DynamoDB, SQS, SNS, IAM and more locally'
 encoding: utf-8
 domain: fakews.com
 url: https://fakews.com
@@ -10,12 +11,6 @@ collections:
   services:
     output: true
     permalink: /services/:path/
-  team:
-    output: true
-    permalink: /team/:path/
-  testimonials:
-    output: true
-    permalink: /testimonials/:path/
 
 defaults:
   - scope:
@@ -29,7 +24,7 @@ defaults:
       image: true
 
 sass:
-  style: compact # possible values: nested expanded compact compressed
+  style: compact
 
 google_analytics_id: UA-950385-33
 

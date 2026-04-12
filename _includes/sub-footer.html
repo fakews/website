@@ -4,7 +4,9 @@
       <div class="col-12">
         <div class="sub-footer">
           <ul>
+            {% if site.data.contact.phone and site.data.contact.phone != '' %}
             <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
+            {% endif %}
             <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
                 {{ site.data.contact.email }}</a></li>
           </ul>

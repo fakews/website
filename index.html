@@ -1,5 +1,5 @@
 ---
-title: Jekyll Serif - Jekyll Small Business Theme
+title: FakeWS - Fake AWS for Local Development
 layout: default
 bodyClass: page-home
 ---
@@ -7,22 +7,22 @@ bodyClass: page-home
 <div class="intro pb-4">
   <div class="container">
     <h1>FakeWS - Just Fake It</h1>
-    <p>Setup a Fake AWS system on your local development environment so you can work without real services.</p>
+    <p>Run a complete fake AWS environment locally. Test S3, DynamoDB, SQS, SNS, IAM, Cognito, SSM, and CloudWatch without needing a real AWS account.</p>
   </div>
 </div>
 
 <div class="container pt-2">
   <div class="call">
     <div class="call-box-top">
-      <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
-      <div class="call-email"><strong>Email: </strong>
-        <a href="mailto:{{ site.data.contact.email }}">
-          {{ site.data.contact.email }}
+      <div class="call-phone"><strong>Get Started: </strong> <code>docker compose up</code></div>
+      <div class="call-email"><strong>GitHub: </strong>
+        <a href="https://github.com/nicecatchman/fakews">
+          github.com/nicecatchman/fakews
         </a>
       </div>
     </div>
     <div class="call-box-bottom">
-      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+      <a href="{{site.baseurl}}/services" class="button">View Services</a>
     </div>
   </div>
 </div>
@@ -30,7 +30,7 @@ bodyClass: page-home
 <div class="container pt-8 pt-md-10">
   <div class="row justify-content-start">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-3">Our Services</h2>
+      <h2 class="title-3 text-dark mb-3">Supported AWS Services</h2>
     </div>
     {% for service in site.services %}
     <div class="col-12 col-md-4 mb-1">
@@ -53,7 +53,7 @@ bodyClass: page-home
 <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">Our Features</h2>
+      <h2 class="title-3 text-dark mb-4">Why FakeWS?</h2>
     </div>
     {% for feature in site.data.features %}
     <div class="col-12 col-md-6 col-lg-4 mb-2">

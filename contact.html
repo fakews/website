@@ -16,59 +16,17 @@ bodyClass: page-contact
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-8">
+      <h3>Get in Touch</h3>
       <ul>
-        <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
-            {{ site.data.contact.email }}</a></li>
-        {% if site.data.contact.address %}
-        <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
-        {% endif %}
+        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a></li>
+        <li><strong>GitHub: </strong><a href="https://github.com/nicecatchman/fakews">github.com/nicecatchman/fakews</a></li>
       </ul>
-      <h4 class="mt-4">Business Hours</h4>
-      <table class="table table-sm opening-hours-table">
-        <tr>
-          <td class="day font-weight-bold">Monday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Tuesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Wednesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Thursday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Friday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Saturday</td>
-          <td class="opens">Closed</td>
-          <td></td>
-          <td class="closes"></td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Sunday</td>
-          <td class="opens">Closed</td>
-          <td> </td>
-          <td class="closes"></td>
-        </tr>
-      </table>
+
+      <h3 class="mt-4">Contributing</h3>
+      <p>FakeWS is open source. Contributions, bug reports, and feature requests are welcome on GitHub.</p>
+
+      <h3 class="mt-4">Report Issues</h3>
+      <p>Found a bug or have a feature request? <a href="https://github.com/nicecatchman/fakews/issues">Open an issue</a> on GitHub.</p>
     </div>
   </div>
 </div>

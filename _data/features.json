@@ -1,17 +1,17 @@
 [
   {
     "title": "Run Locally",
-    "description": "Run the system locally, test locally, perfect for running trials and very easy to get started. Just run a 'docker-compose up'",
+    "description": "All services run in Docker on your machine. No AWS account needed, no surprise bills, no network dependency. Just 'docker compose up' and go.",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
-    "title": "Command line compatible",
-    "description": "Works with the real AWS command line and SDK tools, without any modifications to normal workflow",
+    "title": "AWS SDK Compatible",
+    "description": "Works with the real AWS CLI, SDKs (JavaScript, Python, Go, Java), and tools. Point your endpoint to localhost and your existing code works.",
     "image": "images/features/noun_The Process_1885341.svg"
   },
   {
-    "title": "Customise Setup",
-    "description": "Run one or any number of services as required. Common services like S3, DynamoDB, IAM",
+    "title": "Pick Your Services",
+    "description": "Run only what you need. Start just S3, or spin up the full stack. Each service runs independently with configurable ports.",
     "image": "images/features/noun_3d modeling_1885342.svg"
   }
 ]
