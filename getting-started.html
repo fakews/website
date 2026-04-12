@@ -1,0 +1,96 @@
+---
+title: Getting Started
+layout: default
+bodyClass: page-getting-started
+---
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Getting Started</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container pb-6">
+  <div class="row">
+    <div class="col-12 col-md-8">
+
+      <h2>Prerequisites</h2>
+      <ul>
+        <li>Docker and Docker Compose</li>
+        <li>AWS CLI (optional, for command line testing)</li>
+      </ul>
+
+      <h2>1. Setup AWS Credentials</h2>
+      <p>Create a mock AWS credentials profile in <code>~/.aws/credentials</code>:</p>
+      <pre><code>[mock]
+aws_access_key_id = mock1234
+aws_secret_access_key = mock1234</code></pre>
+
+      <h2>2. Start Services</h2>
+      <p>Start all services:</p>
+      <pre><code>docker compose up -d</code></pre>
+      <p>Or start specific services:</p>
+      <pre><code># Just S3 and DynamoDB
+docker compose up -d s3 dynamodb
+
+# Just the inspector console
+docker compose up -d console</code></pre>
+
+      <h2>3. Use with AWS CLI</h2>
+      <pre><code># Set your profile
+export AWS_PROFILE=mock
+
+# Create an S3 bucket
+aws --endpoint=http://localhost:9000 s3 mb s3://test-bucket
+
+# Create a DynamoDB table
+aws --endpoint=http://localhost:8000 dynamodb list-tables
+
+# Create an SQS queue
+aws --endpoint=http://localhost:9324 sqs create-queue --queue-name test</code></pre>
+
+      <h2>4. Use with AWS SDK</h2>
+      <pre><code>// JavaScript example
+const AWS = require('aws-sdk');
+
+const s3 = new AWS.S3({
+    endpoint: 'http://localhost:9000',
+    accessKeyId: 'mock1234',
+    secretAccessKey: 'mock1234',
+    s3ForcePathStyle: true,
+});
+
+const buckets = await s3.listBuckets().promise();</code></pre>
+
+      <h2>5. Inspector Console</h2>
+      <p>The FakeWS Inspector Console provides a web UI to browse your services. Start it with:</p>
+      <pre><code>docker compose up -d console</code></pre>
+      <p>Then visit <code>http://localhost:3000</code></p>
+
+      <h2>Port Reference</h2>
+      <table class="table table-sm">
+        <thead>
+          <tr><th>Service</th><th>Port</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>S3 (MinIO API)</td><td>9000</td></tr>
+          <tr><td>S3 Console</td><td>9090</td></tr>
+          <tr><td>DynamoDB</td><td>8000</td></tr>
+          <tr><td>SQS</td><td>9324</td></tr>
+          <tr><td>SNS</td><td>9911</td></tr>
+          <tr><td>IAM</td><td>5050</td></tr>
+          <tr><td>Cognito</td><td>9229</td></tr>
+          <tr><td>SSM</td><td>9230</td></tr>
+          <tr><td>CloudWatch</td><td>5051</td></tr>
+          <tr><td>CloudWatch Logs</td><td>5052</td></tr>
+          <tr><td>Inspector Console</td><td>3000</td></tr>
+          <tr><td>Console API</td><td>3001</td></tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
